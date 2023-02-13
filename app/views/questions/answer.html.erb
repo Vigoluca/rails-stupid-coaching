@@ -1,0 +1,13 @@
+<div class = "text-center">
+  <h2><%=@questions%>
+    <h3><em>- You <em></h3>
+    <br>
+    <%if @questions == "I am going to work"%>
+      <img src="https://images.pexels.com/photos/7581015/pexels-photo-7581015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Happy boss" class= "img-happy">
+    <%else %>
+      <img src="https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Angry boss" class = "img-angry">
+    <% end %>
+    <h2><%= @answer%></h2>
+      <h3><em>- Your Boss <em></h3>
+  <%= link_to "Ask a new question", ask_path, class:"btn btn-success rounded-circle" %>
+</div>

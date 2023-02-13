@@ -1,0 +1,8 @@
+<div class = "container" >
+  <form action="/answer" data-turbo="false">
+    <label for= "question"> Don't be scared </label>
+    <input type="text" name="question" value="<%= params[:question] %>" placeholder = "Say something" required>
+    <input type="submit" value="Ask!" class= "btn btn-primary">
+  </form>
+  <p>Hint: you have to go to work<p>
+</div>
